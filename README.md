@@ -1,10 +1,6 @@
-# OpenAI Mountain Car Gym Environment 🏋️
+# OpenAI Mountain Car Gym Environment ⛰️
 
-> Exploring OpenAI gym environment with Mountain Car to learn reinforcement learning algorithms.
-
-## Goals
-
-Learn more about reinforcement learning algorithms.
+> Gym environment solving the MountainCar problem.
 
 ## Results
 
