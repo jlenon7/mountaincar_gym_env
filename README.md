@@ -1,15 +1,25 @@
 # OpenAI Mountain Car Gym Environment ⛰️
 
-> Gym environment solving the MountainCar problem.
+> Gym environment solving the MountainCar problem using Continuous Q-Learning.
 
 ## Results
 
-<img src="resources/result.gif" width="500px" alt="Result" />
+### Simple agent results
+
+<img src="resources/simple_agent_result.gif" width="500px" alt="Result" />
+
+### Continuous Q-Learning agent results
+
+<img src="resources/qlearn_agent_result.gif" width="500px" alt="Result" />
+
+### Epoch points log tracker
+
+<img src="storage/plots/epoch-points-log-tracker.png" width="500px" alt="Epoch points log tracker" />
 
 ## TODOs
 
 - [x] Create simple agent
-- [ ] Train the agent to land exactly on the flag
+- [x] Train the agent to land exactly on the flag
 - [ ] Save the model to be reused with a library like [stable-baselines](https://stable-baselines3.readthedocs.io/en/master/)
 
 ## Running
@@ -44,8 +54,14 @@ To run the agent to complete the game task run:
 make agent
 ```
 
+To run the simple agent run:
+
+```shell
+make simple-agent 
+```
+
 > [!WARNING]
-> Keep in mind that the agent is not using rewards to perform the actions.
+> Keep in mind that the simple agent is not using rewards to perform the actions.
 > Instead is just observing the environment to use the car position and 
 > velocity to use gravity to accomplish the task of climbing the hill. With
 > this approach, we are not completing the secondary task of the problem

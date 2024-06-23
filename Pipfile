@@ -5,14 +5,14 @@ name = "pypi"
 
 [packages]
 pandas = "*"
-numpy = "*"
+numpy = "==1.24.0"
 matplotlib = "*"
 seaborn = "*"
 contourpy = "*"
 scikit-learn = "*"
 scipy = "*"
 pygame = "*"
-gym = {extras = ["atari", "accept-rom-license"], version = "*"}
+gym = "==0.25.0"
 
 [dev-packages]
 

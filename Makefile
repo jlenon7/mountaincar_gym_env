@@ -31,6 +31,10 @@ play:
 agent:
 	python -m bin.agent
 
+# Run the simple model agent.
+simple-agent:
+	python -m bin.simple_agent
+
 # Randomly run actions in game.
 sample:
 	python -m bin.sample
